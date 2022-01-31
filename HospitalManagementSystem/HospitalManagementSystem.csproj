@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2AB0CAE-1EEA-43BD-9E8D-3F0DFE27AFBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalManagementSystem</RootNamespace>
+    <AssemblyName>HospitalManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\OneDrive\Masaüstü\Bnfu_1.5.3_crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkran-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkran-YAPILDI.Designer.cs">
+      <DependentUpon>AdminEkran-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris-YAPILDI.Designer.cs">
+      <DependentUpon>AdminGiris-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm-YAPILDI.Designer.cs">
+      <DependentUpon>AnaForm-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorEkrani-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorEkrani-YAPILDI.Designer.cs">
+      <DependentUpon>DoktorEkrani-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorGiris-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorGiris-YAPILDI.Designer.cs">
+      <DependentUpon>DoktorGiris-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorIslemleri-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorIslemleri-YAPILDI.Designer.cs">
+      <DependentUpon>DoktorIslemleri-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBilgiGuncelle-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaBilgiGuncelle-YAPILDI.Designer.cs">
+      <DependentUpon>HastaBilgiGuncelle-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaDetayEkran-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaDetayEkran-YAPILDI.Designer.cs">
+      <DependentUpon>HastaDetayEkran-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaGiris-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaGiris-YAPILDI.Designer.cs">
+      <DependentUpon>HastaGiris-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaYeniKayit-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaYeniKayit-YAPILDI.Designer.cs">
+      <DependentUpon>HastaYeniKayit-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlinikIslemleri-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlinikIslemleri-YAPILDI.Designer.cs">
+      <DependentUpon>KlinikIslemleri-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuAlmaEkrani-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuAlmaEkrani-YAPILDI.Designer.cs">
+      <DependentUpon>RandevuAlmaEkrani-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="TaburcuOlanHastalar-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaburcuOlanHastalar-YAPILDI.Designer.cs">
+      <DependentUpon>TaburcuOlanHastalar-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaburcuOlmusHastalar-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaburcuOlmusHastalar-YAPILDI.Designer.cs">
+      <DependentUpon>TaburcuOlmusHastalar-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxMaxLength.cs" />
+    <Compile Include="YatanHastaEkraniDoktor-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YatanHastaEkraniDoktor-YAPILDI.Designer.cs">
+      <DependentUpon>YatanHastaEkraniDoktor-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YatanHastalarAdmin-YAPILDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YatanHastalarAdmin-YAPILDI.Designer.cs">
+      <DependentUpon>YatanHastalarAdmin-YAPILDI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminEkran-YAPILDI.resx">
+      <DependentUpon>AdminEkran-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris-YAPILDI.resx">
+      <DependentUpon>AdminGiris-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm-YAPILDI.resx">
+      <DependentUpon>AnaForm-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorEkrani-YAPILDI.resx">
+      <DependentUpon>DoktorEkrani-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorGiris-YAPILDI.resx">
+      <DependentUpon>DoktorGiris-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorIslemleri-YAPILDI.resx">
+      <DependentUpon>DoktorIslemleri-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaBilgiGuncelle-YAPILDI.resx">
+      <DependentUpon>HastaBilgiGuncelle-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaDetayEkran-YAPILDI.resx">
+      <DependentUpon>HastaDetayEkran-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaGiris-YAPILDI.resx">
+      <DependentUpon>HastaGiris-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaYeniKayit-YAPILDI.resx">
+      <DependentUpon>HastaYeniKayit-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlinikIslemleri-YAPILDI.resx">
+      <DependentUpon>KlinikIslemleri-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RandevuAlmaEkrani-YAPILDI.resx">
+      <DependentUpon>RandevuAlmaEkrani-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaburcuOlanHastalar-YAPILDI.resx">
+      <DependentUpon>TaburcuOlanHastalar-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaburcuOlmusHastalar-YAPILDI.resx">
+      <DependentUpon>TaburcuOlmusHastalar-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YatanHastaEkraniDoktor-YAPILDI.resx">
+      <DependentUpon>YatanHastaEkraniDoktor-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YatanHastalarAdmin-YAPILDI.resx">
+      <DependentUpon>YatanHastalarAdmin-YAPILDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
